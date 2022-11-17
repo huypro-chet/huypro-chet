@@ -1,0 +1,729 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+#main {
+
+}
+
+#header {
+    height: 50px;
+    background-image: url("http://2.bp.blogspot.com/-MMZSbpgankU/VHuGZ8BXPWI/AAAAAAAAMIc/N830xnxurXQ/s1600/Hinh-nen-one-piece%2B(15).jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display:inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #fff;
+    background-color:chocolate;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#nav .subnav a {
+    color:black;
+    padding: 0 18px;
+    line-height: 38px;
+}
+
+#nav .nav-icon  {
+    font-size: 12px;
+}
+
+
+#header .menu-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:none;
+}
+
+
+.search{
+    position:relative;
+    display:inline-block;
+    color:white;
+    padding:14px 16px;
+}
+.search-bar{
+    position:absolute;
+    display:none;
+    right:0;
+    top:45px;
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    outline:none;
+    padding: 12px 14px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search:hover{
+    background-color:rgb(48, 187, 221);
+    color:black;
+}
+.search:hover .search-bar{
+    display:block;
+}
+form input[type="text"]:focus{
+    width:500px;
+    background-image: url("http://2.bp.blogspot.com/-MMZSbpgankU/VHuGZ8BXPWI/AAAAAAAAMIc/N830xnxurXQ/s1600/Hinh-nen-one-piece%2B(15).jpg");
+}
+
+
+#header .menu-button,
+#header .search-button{
+    float: right;
+    padding: 0 20px;
+  
+}
+
+
+#header .search-button:hover{
+    /* background-color: chocolate; */
+    cursor: pointer;
+}
+
+
+#header .menu-button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#header .menu-button:hover .menu-icon{
+    color:black;
+    cursor: pointer;
+}
+
+
+#header .menu-icon,
+#header .search-icon {
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+* {
+    box-sizing:border-box
+  }
+  h2 {
+    text-align: center;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  /* Ẩn các slider */
+  .mySlides {
+      display: none;
+  }
+  /* Định dạng nội dung Caption */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/*
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+*/
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-a{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#container {
+
+}
+
+
+
+
+
+
+#container .content-1{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#container .con-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+}
+
+#container .con-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#container .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#container .member-list{
+    margin-top: 48px;
+}
+
+#container .member-a{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#container .member-name{
+    font-size: 15px;
+}
+
+#container .member-img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 154px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#container .member-img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.1rem 2rem 0 rgba(0, 0, 0, 0.08);
+}
+
+
+/*---tour----*/
+
+.tour-1{
+    background-image: url("https://gamek.mediacdn.vn/133514250583805952/2021/1/1/olkk4-16094876126221054075233.jpg");
+    margin-bottom: 20px;
+}
+
+.menu-tour{
+    background-color:#fff;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.menu-tour li{
+    color: #757575;
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.pro{
+    background-color: black;
+}
+
+.menu-tour .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 4px 4px;
+    margin-left: 16px;
+}
+
+.menu-tour .quantity{
+    float: right;
+    width: 40px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+/*---places----*/
+
+.palaces-list{
+    margin: 32px -8px 0;
+    padding-bottom: 32px;
+}
+.palaces-item{
+    float: left;
+    width: 25%;
+    padding: 0 8px;
+}
+
+.palaces-item:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0.1rem 2rem 0 rgba(0, 0, 0, 0.08);
+}
+
+.places-img{
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.places-body{
+    padding: 16px;
+    background-color: #fff;
+    font-size: 13px;
+}
+.places-heading{
+    font-size: 15px;
+    font-weight: 700;
+}
+.palaces-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.places-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.places-bottom{
+    color: #fff;
+    background-color:#f44336;
+    text-decoration: none;
+    padding: 6px 15px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.places-bottom:hover{
+    color: #000;
+    background-color:#757575;
+}
+
+
+/*---end----*/
+.content-video{
+    background-color: red;
+    margin-top: 60px;
+}
+
+.video{
+    margin-top: 32px;
+}
+.item-video{
+    float: left;
+    width: 33.3333%;
+}
+ .video{
+    width: 100%;
+    height: 150px;
+    display: block;
+ }
+/*---footer----*/
+
+
+.footer{
+    margin-top: 15px;
+    border-top: 4px solid var(--primary-color);
+    padding-top: 16px;
+    background-image: url("https://chibi.info/wp-content/uploads/2016/12/one-piece-3d-13.jpg");
+}
+
+.footer-heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: orangered;
+
+}
+
+.footer-tet{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.footer-list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.item-link-footer{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.item-link-footer:hover {
+    color: orangered;
+}
+
+.footer-icon{
+    font-size: 1.4rem;
+    margin: -1px 8px 0 0;
+}
+
+.footer-dowloang{
+    display: flex;
+}
+
+.footer-img-qr{
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--border-color);
+}
+
+.footer-dowloang-app{
+    flex: 1;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-img-app{
+    height: 20px;
+}
+
+.footer-img-app-link{
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer-bottom{
+    background-color: #f5f5f5;
+    padding: 8px 0;
+    margin-top: 24px;
+}
+
+.footer-banquyen{
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #737373;
+}
+
+.footer-item {
+    font-size: 1.2rem;
+
+}
+
+/* end foter */
+
+.modal{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background: #fff;
+    width: 500px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalfacein ease 0.3s;
+}
+
+.modal-header{
+    background: #f44336;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color:black;
+}
+
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color:#000;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-body{
+    padding: 15px;
+}
+
+.modal-label{
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 12px;
+
+}
+
+.anh-pro {
+    width: 30%;
+    height: 50%;
+}
+
+.thongtin1 {
+    width: 70%;
+}
+
+.thongtin1 .h2{
+    text-align:  center;
+    padding: 0px;
+}
+
+.thongtin1 .tin{
+    font-size: 0.7rem;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+
+#buy-tickets:hover{
+    opacity: 0.8;
+}
+
+#buy-tickets{
+    background: #f44336;
+    border: none;
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.footer-bottom{
+    background-image: url("https://img2.thuthuatphanmem.vn/uploads/2018/11/17/anh-anime-phong-canh-buon-dep_112649085.jpg");
+}
+
+
+@keyframes modalfacein {
+    from{
+        opacity: 0;
+        transform: translateY(-130px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* text thu */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
